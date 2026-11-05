@@ -1,5 +1,9 @@
 name: Lint, Test and Deploy
-on: push
+on:
+  pull_request:
+    types: 
+      - opened
+  workflow_dispatch:
 
 jobs:
     build:
